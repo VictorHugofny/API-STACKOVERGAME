@@ -1,0 +1,12 @@
+{
+    "challenges":[
+        {
+            "problems" : [
+                { "id": 1, "problem": "??(3 === 3) {console.log('acertou')}", "description": "O numero 3 é igual a 3?", "correctWords": ["if", "for"], "randomWords": ["for", "while", "if", "break", "i++", "const", "forEach"], "xp": 16, "level": "easy", "lock":true, "completed": true},
+                { "id": 2, "problem": "??(4 === 4) {console.log('acertou')}", "description": "O numero 4 é igual a 4?", "correctWords": ["if"], "randomWords": ["for", "while", "if", "break", "i++", "const", "forEach"], "xp": 26, "level": "normal", "lock":true, "completed": true},
+                { "id": 3, "problem":"??(4 !== 3) {console.log('acertou')}", "description": "O numero 4 é diferente de 3?", "correctWords": ["if", "for"], "randomWords": ["for", "while", "if", "break", "i++", "const", "forEach"], "xp": 36, "level": "easy", "lock":true, "completed": true},
+                { "id": 4, "problem": "??(4 >= 4) {console.log('acertou')}", "description": "O numero 4 é maior igual a 4?", "correctWords": ["if"], "randomWords": ["for", "while", "if", "break", "i++", "const", "forEach"], "xp": 56, "level": "hard", "lock":true, "completed": true}
+            ]
+        }
+    ]
+}
