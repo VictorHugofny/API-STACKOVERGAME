@@ -14,14 +14,13 @@ let listaTabela = [];
 
 //usando promisse para busca assincrona
 function buscarTabela(tabela){
-    return new Promise((resolve, reject) => {
-
+    
+    return new Promise((resolve, reject) => { 
     db.all(`SELECT * FROM ${tabela}`, (err, rows) => {
         if(rows){
             rows.forEach((row) =>{
                 if(tabela == "problems"){
-                    listaTabela.push({
-                        "id": row.id,
+                    listaTabela = [{
                         "problem": row.problem,
                         "description": row.description,
                         "correctWords": row.correctWords,
@@ -30,20 +29,20 @@ function buscarTabela(tabela){
                         "level": row.level,
                         "lock": row.lock,
                         "completed": row.completed
-                    })
+                    }]
                 } 
                 else if(tabela == "desafio"){
-                    listaTabela.push({
+                    listaTabela = [{
                         "id": row.id,
                         "id_problem": row.id
-                    })
+                    }]
                 }
                 else if(tabela == "score"){
-                    listaTabela.push({
+                    listaTabela = [{
                         "id": row.id,
                         "id_usuario": row.id_usuario,
                         "totalXp": row.totalXp
-                    })
+                    }]
                 }
             })
         }else{
